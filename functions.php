@@ -556,6 +556,8 @@ require_once("functions/shortcodes.php");
 
 function icl_post_languages(){
   $languages = icl_get_languages('skip_missing=1');
+  /*echo ('hola');
+  echo ($languages);*/
   if(1 < count($languages)){
     echo ('<div class="language-switcher">');
     foreach($languages as $l){
