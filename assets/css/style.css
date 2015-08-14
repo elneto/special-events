@@ -9336,7 +9336,7 @@ body .video video,
 }
 
 .language-switcher {
-  background-color: #ff8c00;
+  background-color: #7dc000;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -9344,11 +9344,12 @@ body .video video,
   color: white;
   top: 7%;
   right: 7%;
-  padding: .25em .8em .5em;
+  padding: .4em;
   position: absolute;
   text-align: right;
   z-index: 1000;
   line-height: 1.25em;
+  font-size: large;
 }
 
 .language-switcher a{

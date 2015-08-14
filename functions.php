@@ -550,6 +550,20 @@ require_once("functions/custom-post-types.php");
 //Get the custom shortcodes
 require_once("functions/shortcodes.php");
 
+/*--------------------------------------*\
+    Below Added by Ernesto on 08.14.2015
+\*--------------------------------------*/
 
+function icl_post_languages(){
+  $languages = icl_get_languages('skip_missing=1');
+  if(1 < count($languages)){
+    echo ('<div class="language-switcher">');
+    foreach($languages as $l){
+      if(!$l['active']) $langs[] = '<a href="'.$l['url'].'">'.$l['translated_name'].'</a>';
+    }
+    echo join(' | ', $langs);
+    echo ('</div>');
+  }
+}
 
 ?>

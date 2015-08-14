@@ -35,14 +35,16 @@
           $slider_url = $slider_thumb[0];
           $slider_image = '<img src"'.$slider_url.'">';
 
-          //code for the language switcher below
          ?>
         <div>
           <a href="<?php the_permalink(); ?>">
             <img src="<?php echo $slider_url; ?>" alt="View event &mdash; <?php echo $slider_title; ?>">
-            <div class="language-switcher">
-              <a href="">Spanish</a>
-            </div>
+            <!-- <div class="language-switcher"> -->
+              <?php
+              //this function prints the custom language switch, including its div
+              icl_post_languages();
+              ?>
+            <!-- </div> -->
             <div class="hero-unit-text">
               <?php echo $slider_title; ?>
               <p class="small"><i class="fa fa-ticket fa-2"></i> <?php echo $slider_event_date; ?><?php if ($slider_event_time): ?> at <?php echo $slider_event_time; ?> GMT <?php echo get_option('gmt_offset'); ?><?php endif; ?></p>
