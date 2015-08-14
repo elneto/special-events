@@ -563,7 +563,7 @@ function icl_post_languages(){
     echo ('<div class="language-switcher">');
     foreach($languages as $l){
       if(!$l['active']) {
-        $langs[] = '<a href="'.$l['url'].'">'.$l['translated_name'].'</a>';
+        $langs[] = '<a href="'.$l['url'].'">'.$l['native_name'].'</a>';
       }
     }
     echo join(' | ', $langs);
