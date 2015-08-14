@@ -9335,6 +9335,26 @@ body .video video,
   line-height: 1.25em;
 }
 
+.language-switcher {
+  background-color: #ff8c00;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*font-weight: 700;*/
+  color: white;
+  top: 7%;
+  right: 7%;
+  padding: .25em .8em .5em;
+  position: absolute;
+  text-align: right;
+  z-index: 1000;
+  line-height: 1.25em;
+}
+
+.language-switcher a{
+  color: white;
+}
+
 .hero-unit-text p.small {
   font-weight: 400;
 }
