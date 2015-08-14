@@ -1,0 +1,72 @@
+/*------------------------------------*\
+    COLORS
+\*------------------------------------*/
+
+$black:			#252525;
+$highlight:		rgb(78,153	,55);
+$white:			#efefef;
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+html,
+body {
+  height: 100%;
+  /* If utilizing .wrap for sticky footer, the html and body elements cannot have any padding or margin. */
+}
+body {
+	font: 400 14px/1.5 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #444;
+	background-color: $white;
+}
+a:link, a:visited {
+	color: $highlight;
+}
+
+.jumbotron {
+	background-color: $highlight;
+	color: $white;
+}
+.jumbotron a {
+	color: $white;
+}
+
+.navbar {
+	background-color: $black;
+	border: none;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.nav a, .navbar a {
+		color: $white;
+}
+.nav li.active, .nav .open > a:focus {
+
+}
+
+
+.nav li a:hover {
+	background-color: $highlight - #333;
+}
+.dropdown-menu {
+	border: none;
+}
+.nav a .caret, .nav a:hover .caret {
+	border-top-color: $white !important;
+	border-bottom-color: $white;
+}
+.navbar-toggle .icon-bar {
+	color: $black;
+	background-color: $white + #444;
+}
+.navbar-toggle, .navbar-toggle .icon-bar, .navbar-toggle span {
+	color: $black !important;
+}
+.features {
+	padding-bottom: 100px;
+}
+.form-search input {
+	padding: 8px 8px 8px 30px;
+	background: $white url(../img/search.png) no-repeat 5px center;
+	border-radius: 4px;
+	border: 1px solid #dedede;
+}

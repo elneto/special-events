@@ -1,0 +1,170 @@
+  .bs-docs-social-buttons li {
+  display: inline-block;
+  padding: 5px 8px;
+  line-height: 1;
+}
+
+.bs-docs-social {
+  padding: 10px 0;
+  text-align: center;
+  background-color: $brand-accent-primary-color;
+  border-top: 1px solid $brand-accent-secondary-color;
+  border-bottom: 1px solid $brand-accent-secondary-color;
+}
+
+#subscribeModal .modal-content,
+.page .subscribe-form,
+.search .subscribe-form,
+#sml_subscribe_widget,
+.single .subscribe-form {
+  @include background(linear-gradient($brand-primary-color, $brand-primary-color-alt) left repeat);
+  margin: 0;
+  padding: 1.5em;
+  position: relative;
+}
+
+#subscribeModal .modal-content {
+  color: $brand-accent-day-color;
+
+  label {
+    margin-right: 5px;
+
+  }
+}
+
+.home .subscribe-form {
+  @include background(linear-gradient($brand-primary-color, $brand-primary-color-alt) left repeat);
+  margin: 0 -2.8125em -3.25em;
+  padding: 2.9375em 2.8125em 3.25em;
+  position: relative;
+}
+
+.btn-more,
+.btn-default,
+.dropdown-menu,
+.sml_submitbtn,
+.subscribe-form .btn-subscribe,
+.subscribe-form .input-append input,
+.subscribe-form .input-append select,
+.subscribe-form .input-append .uneditable-input,
+.subscribe-form .input-append .add-on:last-child,
+.subscribe-form .input-append .btn:last-child,
+.subscribe-form .input-append .btn-group:last-child > .dropdown-toggle {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: none;
+}
+
+.form-control {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  height: 31px;
+
+  .caret {
+    color: $brand-accent-day-color;
+  }
+}
+
+.btn-default,
+.search-submit {
+  // padding: 7px;
+  background: $brand-primary-color;
+  color: $brand-accent-day-color;
+  &:hover {
+    background: darken($brand-primary-color, 5%);
+    color: $brand-accent-day-color;
+  }
+}
+
+.sml_submitbtn,
+.btn-subscribe {
+  // padding: 7px;
+  background: $brand-secondary-color;
+  color: $brand-accent-day-color;
+  &:hover {
+    background: darken($brand-secondary-color, 5%);
+    color: $brand-accent-day-color;
+  }
+}
+
+.btn-more {
+  background: darken($brand-accent-day-color, 30%);
+  color: $brand-accent-night-color;
+  &:hover{
+    background: darken($brand-primary-color, 5%);
+    color: $brand-accent-day-color;
+  }
+}
+
+.btn-default,
+.btn-subscribe,
+.btn-more {
+  text-shadow: 0 1px 1px rgba($brand-accent-night-color, 0.5);
+  &:hover {
+    text-shadow: 0 1px 1px rgba($brand-accent-night-color, 0.75);
+  }
+}
+
+.btn-watch {
+  padding: 0;
+  margin: 0;
+  &:hover {
+    color: $brand-secondary-color;
+  }
+}
+
+.subscribe-form label {
+  color: $brand-accent-day-color;
+  display: block;
+  font-size: 1.5em;
+  font-weight: $base-font-weight + 200;
+  line-height: 1em;
+  margin: 0 0 12px 0;
+}
+
+.subscribe-form .input-append input {
+  font-size: 21px;
+}
+
+#sml_subscribe_widget {
+  color: $brand-accent-day-color;
+
+  input.sml_emailinput {
+    border: none;
+    padding: 7px;
+    width: 100%;
+  }
+
+  .prepend {
+    font-size: $base-font-size + .25;
+  }
+}
+
+.site-search {
+  width: 300px;
+  right: 7%;
+  background-color: #f8f8f8;
+  padding: 5px 10px 10px 10px;
+  margin-top: 0;
+  z-index: 999;
+  position: absolute;
+}
+
+.subscribe-form input[type="text"] {
+  padding: 11px;
+}
+
+@media only screen and (max-width: 979px) {
+  .subscribe-form {
+    padding: 0.9375em 2.8125em 0.25em;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .subscribe-form .input-append input {
+    font-size: 16px;
+  }
+}

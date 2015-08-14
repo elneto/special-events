@@ -1,0 +1,185 @@
+// Typography
+
+body {
+  color: $brand-accent-dark-gray;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, p {
+  font-family: $base-font-family;
+}
+
+h1, h2, h3, h4, h5, h6, ul, form, .btn {
+  font-family: $header-font-family;
+}
+
+h1,
+.page-header,
+.entry-title {
+  font-weight: $light;
+  margin-top: 0;
+}
+
+.page-header,
+.entry-title {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.75em;
+}
+
+.navbar-inverse .brand{
+  color: $brand-secondary-color;
+}
+
+body .video > h1 {
+  text-align: center;
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  color: $brand-accent-day-color;
+  text-shadow: 1px 1px 1px rgba($brand-accent-night-color, .2);
+}
+
+p.privacy {
+  display: none;
+  a {
+    color: $brand-accent-day-color;
+    text-decoration: underline;
+  }
+}
+
+p.subscribe-invite,
+p.privacy {
+  margin: 0;
+}
+
+.single p.lead,
+p.event-summary {
+  color: darken($brand-primary-color, 10%);
+  font-size: $base-font-size + 0.5;
+  font-weight: $light + 100;
+  line-height: $base-line-height + .25;
+}
+
+h3.event-title {
+  margin-top: 0;
+}
+
+h4.event-title {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  font-size: 1em;
+  line-height: 1em;
+  color: $brand-accent-day-color;
+  text-shadow: 1px 1px 1px rgba($brand-accent-night-color, .2);
+  text-align: left;
+  text-transform: normal;
+  word-wrap: normal;
+  cursor: pointer;
+  // @include animation(bounce 1.0s ease-in, slide 2.0s ease);
+}
+
+.subscribe-form,
+h4.event-title a {
+  color: $brand-accent-day-color;
+}
+
+.masonry-filter {
+  text-align: left;
+}
+
+ul#filter {
+  font-size: 1.15em;
+}
+
+.hero-unit-text-headline {
+  font-weight: $bold;
+  margin: 0;
+}
+
+#home-about-container {
+  background: darken($brand-accent-day-color, 5%);
+  color: $brand-accent-dark-gray;
+  padding: 40px 0;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+#home-about-content {
+  padding: 0 40px;
+}
+
+#home-about-content h2 {
+  font-weight: 200;
+}
+
+.event-date {
+  text-align: center;
+  text-transform: uppercase;
+
+  .date-day {
+    margin: 0px 20px 10px 0;
+    padding: 10px 1px 10px 3px;
+    width: 100%;
+    color: $brand-accent-day-color;
+    background: $brand-primary-color;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    h2 {
+      font-weight: $bold;
+      font-size: $base-font-size + 2;
+    }
+  }
+
+  .date-month {
+    margin: 10px auto 0 auto;
+    padding: 0;
+    font-size: $base-font-size;
+  }
+}
+
+ul.event-details {
+  list-style: none;
+  margin-left: 0;
+
+  i.fa {
+    width: 15px;
+    text-align: center;
+  }
+}
+
+.search .content,
+.page .content {
+  margin-top: 130px;
+}
+
+.home .content {
+  margin-top: 100px;
+}
+
+.single .content {
+  margin-top: 99px;
+}
+
+@media only screen and (max-width: 979px) {
+  #sub-page > div.page-title {
+    margin-top: 5px;
+  }
+
+  .search .content,
+  .page .content {
+    margin-top: 110px;
+  }
+
+  .single .content {
+    margin-top: 85px;
+  }
+
+  .home .content {
+    margin-top: 80px;
+  }
+}

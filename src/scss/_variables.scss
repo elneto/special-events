@@ -1,0 +1,48 @@
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 700;
+
+// Base Font
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$header-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-weight: $light;
+$base-font-size: 1em;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-weight: $bold;
+
+// Colors
+$color-blue: rgba(52, 152, 219,1.0);
+$color-blue-alt: rgba(41, 128, 185,1.0);
+$color-green: rgba(125, 192, 0, 1.0);
+$color-green-alt: rgba(46, 204, 113,1.0);
+$color-green-alt-two: rgba(39, 174, 96,1.0);
+$color-yellow: rgba(241, 196, 15,1.0);
+$color-orange: rgba(243, 156, 18,1.0);
+$color-whitesmoke-gray: rgba(236, 240, 241,1.0);
+$color-light-gray: rgba(189, 195, 199,1.0);
+$color-white: rgba(255, 255, 255, 1.0);
+$color-black: rgba(0, 0, 0, 1.0);
+$color-dark-gray: rgba(34, 34, 34, 1.0);
+
+
+
+$brand-primary-color: $color-blue;
+$brand-primary-color-alt: $color-blue-alt;
+$brand-secondary-color: $color-green;
+$brand-secondary-color-two: $color-green-alt;
+$brand-secondary-color-alt: $color-green-alt-two;
+$brand-tertiary-color: $color-yellow;
+$brand-tertiary-color-alt: $color-orange;
+$brand-accent-primary-color: $color-whitesmoke-gray;
+$brand-accent-secondary-color: $color-light-gray;
+$brand-accent-day-color: $color-white;
+$brand-accent-night-color: $color-black;
+$brand-accent-dark-gray: $color-dark-gray;
