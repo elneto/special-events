@@ -39,13 +39,13 @@
         <div>
           <a href="<?php the_permalink(); ?>">
             <img src="<?php echo $slider_url; ?>" alt="View event &mdash; <?php echo $slider_title; ?>">
-            <div class="language-switcher">
+            <!-- <div class="language-switcher">
               <a href="#">English</a>
               <?php
               //this function prints the custom language switch, including its div
               icl_post_languages();
               ?>
-            </div>
+            </div> -->
             <div class="hero-unit-text">
               <?php echo $slider_title; ?>
               <p class="small"><i class="fa fa-ticket fa-2"></i> <?php echo $slider_event_date; ?><?php if ($slider_event_time): ?> at <?php echo $slider_event_time; ?> GMT <?php echo get_option('gmt_offset'); ?><?php endif; ?></p>

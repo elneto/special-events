@@ -30,6 +30,7 @@
 
             <div id="hero-unit">
               <?php $image = wp_get_attachment_image_src( $thumb_id, 'jumbotron' ); ?>
+               <?php  icl_post_languages(); ?>
               <div id="single-event-bg" style="background-image: url('<?php echo $image[0]; ?>')">
                 <img src="<?php echo $image[0]; ?>">
               </div>

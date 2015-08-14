@@ -13,7 +13,7 @@
 
             		<!-- article -->
             		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+                       
             			<?php the_content(); ?>
 
             			<?php // comments_template( '', true ); // Commented out - enable if you want to see comments ?>
